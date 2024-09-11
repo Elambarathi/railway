@@ -34,6 +34,15 @@ AWS_S3_FILE_OVERWRITE = False
 AWS_DEFAULT_ACL = None
 AWS_S3_VERIFY = True
 
+AWS_ACCESS_KEY_ID = 'AWS_ACCESS_KEY'
+AWS_SECRET_ACCESS_KEY = 'AWS_SECRET_ACCESS'
+AWS_STORAGE_BUCKET_NAME = 'AWS_STORAGE_BUCKET'
+AWS_S3_REGION_NAME = 'AWS_S3_REGION'  # For example, 'us-east-1'
+AWS_S3_SIGNATURE_VERSION = 'AWS_S3_SIGNATURE'
+AWS_S3_FILE_OVERWRITE = False
+AWS_DEFAULT_ACL = None
+AWS_S3_VERIFY = True
+
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 MEDIA_URL = f'https://{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com/'
 
@@ -99,11 +108,11 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',  # or 'django.db.backends.mysql' for MySQL
-        'NAME':'elambarathi',
-        'USER': 'django',
-        'PASSWORD': 'Barathi24',
-        'HOST': 'myproject-db.cpq0iicus6ls.ap-southeast-2.rds.amazonaws.com',
-        'PORT': '5432',  # Use 3306 if you are using MySQL
+        'NAME':'name',
+        'USER': 'user',
+        'PASSWORD': 'password',
+        'HOST': 'host',
+        'PORT': 'port',  # Use 3306 if you are using MySQL
     }
 }
 
