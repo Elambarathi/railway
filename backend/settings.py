@@ -25,8 +25,8 @@ SECRET_KEY = 'django-insecure-^^h#5to-t0asa-4lorg97iadbi(9gk6i5k6l86%)ttqh^km-7i
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-AWS_ACCESS_KEY_ID = ''
-AWS_SECRET_ACCESS_KEY = ''
+AWS_ACCESS_KEY_ID = 'AKIAYM7POKOBSXC6IDY3'
+AWS_SECRET_ACCESS_KEY = 's5uHX59Bou8YQZ/PBnGp5QwDyO7ydJDvYDhFaXKA'
 AWS_STORAGE_BUCKET_NAME = 'testelambarathi'
 AWS_S3_REGION_NAME = 'ap-southeast-2'  # For example, 'us-east-1'
 AWS_S3_SIGNATURE_VERSION = 's3v4'
